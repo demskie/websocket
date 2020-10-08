@@ -12,7 +12,7 @@ import (
     xwebsocket "golang.org/x/net/websocket"
 )
 
-manager, err := NewManager("127.0.0.1:12345", nil)
+manager, err := websocket.NewManager("127.0.0.1:12345", nil)
 if err != nil {
     panic(err)
 }
